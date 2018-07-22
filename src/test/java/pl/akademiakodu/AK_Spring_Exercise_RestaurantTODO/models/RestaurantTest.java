@@ -44,6 +44,6 @@ public class RestaurantTest {
         mealList.add(restaurant.getMenu().get(3));
         mealList.add(restaurant.getMenu().get(6));
         orderTest.setMealList(mealList);
-        assertEquals(restaurant.calculateOrderPrice(orderTest), 35);
+        assertEquals(35, restaurant.calculateOrderPrice(orderTest));
     }
 }
